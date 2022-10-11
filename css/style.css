@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Fugaz+One&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+html{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ff7e44;
+    --secondary-color: #034b5a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,a,li,label,input{
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+}
+
+header nav{
+    background: #ffffff;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 5px 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: .4s;
+    padding: 5px;
+    font-size: 18px;
+}
+ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+ul li:nth-child(6) a{
+    background: var(--secondary-color);
+    padding: 20px 20px;
+    color: #fff;
+}
+
+ul li:nth-child(6) a:hover{
+    border: 0;
+    background: var(--primary-color);
+}
+
+header #hero{
+    width: 100%;
+    background: url("../img/hero.png");
+    background-size: cover;
+    padding: 230px 0 180px;
+}
+
+#hero h1{
+    color: #ffffff;
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+#hero p{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button{
+    cursor: pointer;
+}
+
+#hero .btn-primary{
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 40px;
+    font-weight: 500;
+    border: 0;
+}
+#hero .btn-secondary{
+    color: var(--primary-color);
+    padding: 20px 40px;
+    font-weight: 500;
+    border: 0;
+    text-decoration: underline;
+    background: transparent;
+}
